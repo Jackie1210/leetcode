@@ -1,0 +1,21 @@
+{
+  "name": "algorithms-repo",
+  "version": "1.0.0",
+  "description": "This repo is just for relearning algorithms and DS.",
+  "scripts": {
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jackie1210/algorithms-repo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jackie1210/algorithms-repo/issues"
+  },
+  "homepage": "https://github.com/Jackie1210/algorithms-repo#readme",
+  "devDependencies": {
+    "typescript": "^4.1.5"
+  }
+}

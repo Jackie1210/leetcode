@@ -11,7 +11,8 @@
  * @param {number} n
  * @return {ListNode}
  */
-var reverseBetween = function(head, m, n) {
+import ListNode, { ListNodeType } from './ds'
+var reverseBetween = function(head: ListNodeType, m: number, n: number): ListNodeType {
   var dump = new ListNode(-1) // 保留一个节点指向初始的头节点
   dump.next = head
   var pre = dump

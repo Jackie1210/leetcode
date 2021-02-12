@@ -14,7 +14,8 @@
  * @param {ListNode} head
  * @return {ListNode}
  */
-var reverseList = function(head) {
+import {ListNodeType} from './ds'
+function reverseList(head: ListNodeType): ListNodeType {
     if (!head || head.next === null) return head
     var last = reverseList(head.next)
 
