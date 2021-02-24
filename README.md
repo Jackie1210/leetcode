@@ -28,3 +28,11 @@ String.fromCharCode('a'.charCodeAt() ^ ' '.charCodeAt()) === 'A'
 ```js
 n & (n - 1)
 ```
+
+### 判断一个数是不是2的指数
+```js
+function isPowerOf2(num){
+  if (num < 0) return false
+  return (n & (n - 1)) === 0
+}
+```
