@@ -25,5 +25,3 @@ function leftSign(s: string): string{
 
 const a = isValid(")(){}")
 
-debugger
-
