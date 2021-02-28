@@ -54,4 +54,3 @@ function isDigit(s: string): boolean{
   return regex.test(s)
 }
 
-const sum = calculate("(1+(4+5+2)-3)+(6+8)")
