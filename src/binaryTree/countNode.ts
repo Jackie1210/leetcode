@@ -1,5 +1,5 @@
 import TreeNode from './ds'
-
+// 给你一棵 完全二叉树 的根节点 root ，求出该树的节点个数。 满二叉树节点个数2^h - 1
 function countNodes(root: TreeNode | null): number {
   let hl = 0
   let hr = 0
