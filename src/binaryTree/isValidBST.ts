@@ -1,6 +1,10 @@
 import TreeNode from './ds'
+/**
+ * 判断二叉搜索树的合法性 前序遍历
+ * @param root 
+ */
 function isValidBST(root: TreeNode | null): boolean {
-  help(root, null, null)
+  return help(root, null, null)
 }
 
 function help(root: TreeNode | null, min: TreeNode | null, max: TreeNode | null){

@@ -1,3 +1,8 @@
+/**
+ * dp: 前x个物品能不能把容量为y的背包装满
+ * @param nums 
+ * @returns 
+ */
 function canPartition(nums: number[]): boolean {
   let sum = nums.reduce((acce, prev) => acce + prev, 0)
   const n = nums.length
@@ -17,8 +22,10 @@ function canPartition(nums: number[]): boolean {
   for(let x = 1; x <= n; x++){
     for(let y = 1; y <= sum; y++){
       if (y - nums[x-1] < 0){
+        // 背包容量不足，不能装入第 i 个物品
         dp[x][y] = dp[x-1][y]
       } else {
+        // 装入或不装入背包
         dp[x][y] = dp[x-1][y] || dp[x-1][y - nums[x-1]]
       }
     }

@@ -1,3 +1,7 @@
+/**
+ * 计算最长公共子序列
+ * s1[0...i] & s2[0...j] 的LCS dp[i][j]
+ */
 function longestCommonSubsequence(text1: string, text2: string): number {
   return dp(text1, text2)
 }

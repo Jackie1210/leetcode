@@ -7,7 +7,7 @@ import TreeNode from './ds'
 // 首先找到需要删除的节点；
 // 如果找到了，删除它。
 // 说明： 要求算法时间复杂度为 O(h)，h 为树的高度。
-
+// 删除时 将儿茶搜索树的右子树的最小节点的值付给root，再删除右子树的最小节点
 function deleteNode(root: TreeNode | null, key: number): TreeNode | null {
   if (root === null) return null
 
@@ -31,6 +31,11 @@ function deleteNode(root: TreeNode | null, key: number): TreeNode | null {
   return root
 }
 
+/**
+ * 寻找最小的节点
+ * @param root 
+ * @returns 
+ */
 function getMinNode(root: TreeNode | null): TreeNode | null{
   while(root.left !== null) root = root.left
 

@@ -1,3 +1,10 @@
+/**
+ * 给定两个整数 n 和 k，返回 1 ... n 中所有可能的 k 个数的组合。
+ * 回溯法 track res 回溯
+ * @param n 
+ * @param k 
+ * @returns 
+ */
 function combine(n: number, k: number): number[][] {
   const res = []
   const track = []

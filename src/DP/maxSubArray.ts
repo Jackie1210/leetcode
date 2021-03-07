@@ -1,3 +1,8 @@
+/**
+ * 最大连续子数组之和
+ * @param nums 
+ * @returns 
+ */
 function maxSubArray(nums: number[]): number {
   let dp = Array(nums.length)
 

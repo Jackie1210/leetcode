@@ -1,5 +1,10 @@
 import TreeNode from './ds'
 
+/**
+ * 构造最大二叉树 数组升序 前序遍历
+ * @param nums 
+ * @returns 
+ */
 function constructMaximumBinaryTree(nums: number[]): TreeNode | null {
   if (!nums || nums.length === 0){
     return null

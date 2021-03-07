@@ -1,3 +1,8 @@
+/**
+ * N皇后问题 
+ * @param n 
+ * @returns 
+ */
 function solveNQueens(n: number): string[][] {
   const res = []
 
@@ -11,6 +16,14 @@ function solveNQueens(n: number): string[][] {
   return res
 }
 
+/**
+ * 深度优先遍历
+ * @param track 
+ * @param row 
+ * @param n 
+ * @param res 
+ * @returns 
+ */
 function dfs(track: string[][], row: number, n: number, res: string[][]){
 
   if (row === n){
@@ -30,6 +43,14 @@ function dfs(track: string[][], row: number, n: number, res: string[][]){
   }
 }
 
+/**
+ * 判断是不是合法的位置
+ * @param res 
+ * @param row 
+ * @param col 
+ * @param n 
+ * @returns 
+ */
 function isValid(res: string[][], row: number, col: number, n: number): boolean{
   for(let i = 0; i < n; i++){
     if (res[i][col] === 'Q'){

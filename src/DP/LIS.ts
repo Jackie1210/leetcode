@@ -1,3 +1,8 @@
+/**
+ * 最长递增子序列
+ * @param nums 
+ * @returns 
+ */
 function lengthOfLIS(nums: number[]): number {
   if (nums.length === 0) return 0
   const len = nums.length
@@ -8,6 +13,7 @@ function lengthOfLIS(nums: number[]): number {
   for(let i = 1; i <= len; i++){
     for (let j = 0; j < i; j++) {
       if (nums[i] > nums[j]) {
+        // 最长连续递增子序列
           dp[i] = Math.max(dp[i], dp[j] + 1);
       }
     }

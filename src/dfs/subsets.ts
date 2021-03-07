@@ -1,3 +1,8 @@
+/**
+ * 求一个数组的所有子集
+ * @param nums 
+ * @returns 
+ */
 function subsets(nums: number[]): number[][] {
   const res = []
   const track = []

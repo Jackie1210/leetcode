@@ -1,3 +1,10 @@
+/**
+ * 给定两个字符串 s1 和 s2，判断 s1 是否包含 s2 的子串
+ * 思路： 滑动窗口 在收缩的时候判断结果
+ * @param s1 
+ * @param s2 
+ * @returns 
+ */
 function checkInclusion(s1: string, s2: string): boolean {
   let need = new Map()
   let window = new Map()

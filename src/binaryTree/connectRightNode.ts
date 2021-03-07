@@ -27,7 +27,11 @@ class NodeType {
       this.next = (next===undefined ? null : next)
   }
 }
-
+/**
+ * 填充每个节点的下一个右侧节点 前序遍历 注意 左子树的右节点和右子树的左节点
+ * @param root 
+ * @returns 
+ */
 function connect(root: NodeType | null): NodeType | null {
   if (root === null || root.left === null){
     return root

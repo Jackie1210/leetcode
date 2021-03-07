@@ -1,4 +1,4 @@
-// 反转链表的迭代实现
+// K个一组翻转链表，迭代实现
 
 /**
  /**
@@ -14,6 +14,7 @@
  */
 import ListNode from './ds'
 /**
+ * 翻转链表从a到b的部分
  * @param {ListNode} a
  * @param {ListNode} b
  * @return {ListNode}

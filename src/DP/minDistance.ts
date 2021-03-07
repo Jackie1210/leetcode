@@ -1,3 +1,10 @@
+/**
+ * 两个字符串的删除操作
+ * 给定两个单词 word1 和 word2，找到使得 word1 和 word2 相同所需的最小步数，每步可以删除任意一个字符串中的一个字符。
+ * @param word1 
+ * @param word2 
+ * @returns 
+ */
 function minDistance(word1: string, word2: string): number {
   const m = word1.length
   const n = word2.length

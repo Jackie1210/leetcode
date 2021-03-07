@@ -1,3 +1,10 @@
+/**
+ * 给定两个字符串s1, s2，找到使两个字符串相等所需删除字符的ASCII值的最小和。 => 计算最长公共子序列的和
+ * s1[0...i] & s2[0...j] 的LCS dp[i][j]
+ * @param s1 
+ * @param s2 
+ * @returns 
+ */
 function minimumDeleteSum(s1: string, s2: string): number {
   return dp(s1, s2)
 }

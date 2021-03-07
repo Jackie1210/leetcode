@@ -1,5 +1,10 @@
 import ListNode from './ds'
 
+/**
+ * 删除重复的元素
+ * @param head 
+ * @returns 
+ */
 function deleteDuplicates(head: ListNode | null): ListNode | null {
   if (head === null) return null
   let fast = head

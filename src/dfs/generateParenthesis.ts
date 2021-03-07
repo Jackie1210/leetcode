@@ -1,5 +1,5 @@
 /**
- * 生成合法括号对的数量
+ * 生成合法括号对的数量 dfs
  * @param n 
  */
 function generateParenthesis(n: number): string[] {
@@ -17,7 +17,7 @@ function generateParenthesis(n: number): string[] {
 function dfs(res: string[], track: string[], left: number, right: number){
 
   if (left < 0 || right < 0) return
-  if (right < left) return
+  if (right < left) return // 进行剪枝
   if (left === 0 && right === 0){
     res.push([].concat(track).join(''))
   }

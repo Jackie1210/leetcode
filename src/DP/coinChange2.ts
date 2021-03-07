@@ -1,3 +1,9 @@
+/**
+ * 给定不同面额的硬币和一个总金额 写出组合数
+ * @param amount 
+ * @param coins 
+ * @returns 
+ */
 function change(amount: number, coins: number[]): number {
   const n = coins.length
   let dp = Array(n+1)

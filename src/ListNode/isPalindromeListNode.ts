@@ -1,5 +1,10 @@
 import ListNode, { ListNodeType } from './ds'
 
+/**
+ * 判断链表是会问链表。快慢指针是的慢指针定位到中点的位置，快指针定位到终点。再翻转链表进行比较
+ * @param head 
+ * @returns 
+ */
 function isPalindrome(head: ListNodeType): boolean {
   let slow:ListNodeType = head
   let fast:ListNodeType = head

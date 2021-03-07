@@ -1,3 +1,8 @@
+/**
+ * 最长无重复子串
+ * @param s 
+ * @returns 
+ */
 function lengthOfLongestSubstring(s: string): number {
   let window = new Map()
 

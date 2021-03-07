@@ -7,6 +7,12 @@ function moveZeroes(nums: number[]): void {
   }
 };
 
+/**
+ * 移除元素 双指针
+ * @param nums 
+ * @param val 
+ * @returns 
+ */
 function removeElement(nums: number[], val: number): number {
   let slow = 0
   let fast = 0

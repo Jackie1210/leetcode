@@ -1,4 +1,9 @@
 import TreeNode from './ds'
+/**
+ * 二叉树的最小高度 进行广度优先遍历
+ * @param root 
+ * @returns 
+ */
 function minDepth(root: TreeNode | null): number {
   if (!root) return 0
   const q = [root];

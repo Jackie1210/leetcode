@@ -23,6 +23,13 @@ function dp(coins: number[], amount: number, map: Map<number, number>): number{
   return map.get(amount)
 }
 
+/**
+ * 给定不同面额的硬币 coins 和一个总金额 amount。编写一个函数来计算可以凑成总金额所需的最少的硬币个数。
+ * dp => 对于金额i 所需要的最少的硬币个数
+ * @param coins 
+ * @param amount 
+ * @returns 
+ */
 function coinChangeDP(coins: number[], amount: number): number{
   const dp = Array(amount+1).fill(amount+1)
 

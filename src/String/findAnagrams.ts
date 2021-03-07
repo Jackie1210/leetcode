@@ -1,3 +1,9 @@
+/**
+ * 给定一个字符串 s 和一个非空字符串 p，找到 s 中所有是 p 的字母异位词的子串，返回这些子串的起始索引。
+ * @param s 
+ * @param p 
+ * @returns 
+ */
 function findAnagrams(s: string, p: string): number[] {
   let need = new Map()
   let window = new Map()
