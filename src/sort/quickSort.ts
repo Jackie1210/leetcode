@@ -18,7 +18,7 @@ function partition(arr, left ,right) {     // 分区操作
   const v = arr[left]
   while(1){
     while(arr[++i] < v) if (i === right) break
-    while(arr[--j] > v) if (i === right) break
+    while(arr[--j] > v) if (j === left) break
     if (i >= j) break
     swap(arr, i, j)
   }
