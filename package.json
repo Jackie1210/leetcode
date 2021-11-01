@@ -3,11 +3,21 @@
   "version": "1.0.0",
   "description": "This repo is just for relearning algorithms and DS.",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "format": "prettier --write ."
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Jackie1210/algorithms-repo.git"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged --concurrent false",
+    "commit-msg": "node scripts/verifyCommit.js"
+  },
+  "lint-staged": {
+    "*": [
+      "prettier --write --ignore-unknown"
+    ]
   },
   "author": "",
   "license": "ISC",
@@ -16,7 +26,11 @@
   },
   "homepage": "https://github.com/Jackie1210/algorithms-repo#readme",
   "devDependencies": {
+    "chalk": "^4.1.2",
+    "lint-staged": "^11.2.6",
+    "prettier": "^2.4.1",
     "ts-node": "^9.1.1",
-    "typescript": "^4.1.5"
+    "typescript": "^4.4.4",
+    "yorkie": "^2.0.0"
   }
 }
