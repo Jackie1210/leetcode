@@ -1,5 +1,5 @@
-# algorithms-repo
-This repo is just for relearning algorithms and DS.
+# leetcode
+This repo is just for leetcode.
 
 ## TIPS
 ### 利用`|`和空格将英文字符转换为小写
